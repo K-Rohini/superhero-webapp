@@ -9,7 +9,6 @@ function SearchOutput(props){
       
     <div >
         {superherodata.map(superhero=><SearchData data={superhero}/>)}
-        //Hello
     </div>
     );
 }
