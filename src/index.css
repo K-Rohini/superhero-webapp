@@ -5,9 +5,51 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(243, 179, 179);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.header{
+  padding: 30px 0px 10px;
+  text-align: center;
+  background-color: rgb(209, 198, 198);
+  height: 50px;
+}
+#h1{
+  font-size: 40px;
+  font-weight: 600;
+}
+.header2{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 700px;
+}
+#searchbar{
+  width: 100%;
+  padding: 10px auto;
+  height: 50px;
+  font-size: 22px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.searchoutput{
+  display: flex;
+  box-sizing: border-box;
+  background-color: lavenderblush;
+  border-radius: 20px;
+}
+.img{
+  padding-right: 120px;
+}
+.Details{
+  padding-top: 10px;
+}
+.Details h1{
+  font-size: 50px;
+}
+.stats div{
+font-size: 20px;
 }

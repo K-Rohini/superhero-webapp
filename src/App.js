@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'; 
+import Header from './header';
+import SearchBar from './SearchBar';
+// import SearchData from './SearchData';
+import SearchOutput from './SearchOutput';
 
 function App() {
+  
+    const [ SearchTerm ,setSearchTerm]=useState('');
+    const [superherodata,setsuperherodata]=useState([]);
+    
+    async function searchSuperHeroes(){
+        const response = await fetch(`https://www.superheroapi.com/api.php/3048856572034660/search/${SearchTerm}`);
+        const data=await response.json();
+        console.log("searchSuperHeroes->data",data)
+
+         setsuperherodata(data.results);
+    }
+
+    function handleChanges(e){
+        const SearchData=e.target.value;
+
+        setSearchTerm(SearchData);
+        if(SearchData.length===0){
+          setsuperherodata([]);
+        }
+        if (SearchData.length>3){
+            searchSuperHeroes();
+        }
+    }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div className="header2">
+     < SearchBar SearchTerm={SearchTerm} handleChanges={handleChanges}/>
+     <SearchOutput superherodata={superherodata}/>
+     </div>
     </div>
   );
+  
 }
 
 export default App;
