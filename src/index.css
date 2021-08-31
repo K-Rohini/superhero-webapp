@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap');
+head,body{
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+}
 body{
-  background-color: rgb(116, 113, 113);
+  background-color: #fff;
 }
 .header{
+  margin: 0;
+  letter-spacing: 2px;
   padding: 30px 0px 10px;
   text-align: center;
-  color:rgb(0, 0, 0);
-  background-color: rgb(230, 224, 224);
+  color:#01ffb3;
+  background-color: rgb(0, 0, 0);
   height: 50px;
 }
 #h1{
@@ -15,14 +22,16 @@ body{
 .header2{
   margin: 0 auto;
   margin-top: 30px;
+  letter-spacing: 2px;
+  padding: 2px;
   width: 700px;
+  color: #11324D;
 }
 #searchbar{
   width: 100%;
   padding: 10px auto;
   height: 50px;
-  font-size: 22px;
-  margin: auto;
+
   margin-bottom: 30px;
 }
 .searchoutput{
@@ -34,7 +43,9 @@ body{
   margin-bottom: 30px;
 }
 .img{
+
   padding-right: 120px;
+  border-radius: 20px;
 }
 .Details{
   padding-top: 10px;

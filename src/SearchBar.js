@@ -7,7 +7,7 @@ function SearchBar(props){
     return (
       
         <div>
-            <input id="searchbar" type="search" placeholder="search superheroes" onChange={handleChanges} value={SearchTerm}/>
+            <input id="searchbar" type="search" placeholder="Search Super Heroes" onChange={handleChanges} value={SearchTerm}/>
                
         </div>
     );
