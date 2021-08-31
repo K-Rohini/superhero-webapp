@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+
 
 function SearchData(props) {
   const { data } = props;
@@ -19,7 +19,7 @@ function SearchData(props) {
           <div>Gender :{data.appearance.gender}</div>
           <div>Strength : {data.powerstats.strength}</div>
           <div>Speed : {data.powerstats.speed}</div>
-        {/* <div className='link'> <li><Link to={"/ReadMore"}>readmore</Link> </li> </div> */}
+      
         </div>
       </div>
     </div>
