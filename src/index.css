@@ -1,21 +1,11 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(243, 179, 179);
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: rgb(116, 113, 113);
 }
 .header{
   padding: 30px 0px 10px;
   text-align: center;
-  background-color: rgb(209, 198, 198);
+  color:rgb(0, 0, 0);
+  background-color: rgb(230, 224, 224);
   height: 50px;
 }
 #h1{
@@ -37,9 +27,11 @@ code {
 }
 .searchoutput{
   display: flex;
+    display: flex;
   box-sizing: border-box;
-  background-color: lavenderblush;
-  border-radius: 20px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
 .img{
   padding-right: 120px;
@@ -50,6 +42,7 @@ code {
 .Details h1{
   font-size: 50px;
 }
-.stats div{
+.stats{
 font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
 }
